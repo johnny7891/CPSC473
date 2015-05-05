@@ -115,7 +115,7 @@ var main = function (toDoObjects) {
                     $.post("todos", newToDo, function (result) {
                         console.log(result);
 
-			sockets.emit("newToDoItem", newToDo);
+			sockets.emit('newToDoItem', newToDo);
 
                         //toDoObjects.push(newToDo);
                         toDoObjects = result;
